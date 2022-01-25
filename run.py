@@ -36,7 +36,7 @@ def answer(question_id, answer_id):
     return render_template("answer.html", correct=correct)
 
 @app.route("/about")
-def home():
+def about():
     return render_template("about.html")
 
 if __name__ == "__main__":
