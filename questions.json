@@ -13,11 +13,8 @@
             }
         ],
         "correct": 1
-    }
-]
-
-[
-    {
+    },
+ {
         "id": 2,
         "title": "Second Question",
         "question": "What were the first ice hockey pucks made out of?",
@@ -31,10 +28,8 @@
             }
         ],
         "correct": 2
-    }
-] 
+    },
 
-[
     {
         "id": 3,
         "title": "third question",
@@ -49,5 +44,20 @@
             }
         ],
         "correct": 2
-    }
-]
+    },
+
+    {
+        "id": 4,
+        "title": "fourth question",
+        "question": "which celebrity did Ciler get gobsmacked by in New York?",
+        "answers": [
+            {
+                "id": 1,
+                "text": "justin bieber"
+            }, {
+                "id": 2,
+                "text": "selener gomez!"
+            }
+        ],
+        "correct": 2
+    },
