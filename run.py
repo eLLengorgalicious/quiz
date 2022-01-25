@@ -35,6 +35,9 @@ def answer(question_id, answer_id):
     correct = check_answer(question_id, answer_id)
     return render_template("answer.html", correct=correct)
 
+@app.route("/about")
+def home():
+    return render_template("about.html")
 
 if __name__ == "__main__":
     app.run()
