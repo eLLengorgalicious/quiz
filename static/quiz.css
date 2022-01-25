@@ -24,7 +24,7 @@ body {
 }
 h1 {
     width: 100%;
-    background: forestgreen;
+    background: rgb(34, 135, 139);
     color: white;
     margin: 0px;
     padding: 15px 20px;
@@ -37,7 +37,7 @@ h1 {
 .question {
     margin: 50px auto;
     width: 70%;
-    border: 5px dashed forestgreen;
+    border: 5px dashed rgb(34, 114, 139);
     border-radius: 15px;
     padding: 40px 70px;
 }
