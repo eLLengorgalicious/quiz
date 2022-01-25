@@ -15,6 +15,7 @@
         "correct": 1
     }
 ]
+
 [
     {
         "id": 2,
@@ -27,6 +28,24 @@
             }, {
                 "id": 2,
                 "text": "frozen cow dung lol!!"
+            }
+        ],
+        "correct": 2
+    }
+] 
+
+[
+    {
+        "id": 3,
+        "title": "third question",
+        "question": "what movie/tv series was Trixer in?",
+        "answers": [
+            {
+                "id": 1,
+                "text": "teletubbies"
+            }, {
+                "id": 2,
+                "text": "paradise lost!!"
             }
         ],
         "correct": 2
