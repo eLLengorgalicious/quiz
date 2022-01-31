@@ -39,5 +39,10 @@ def answer(question_id, answer_id):
 def about():
     return render_template("about.html")
 
+    @app.route("/Cilia")
+def home():
+    return render_template("Cilia.html")
+
 if __name__ == "__main__":
     app.run()
+
