@@ -39,9 +39,19 @@ def answer(question_id, answer_id):
 def about():
     return render_template("about.html")
 
-    @app.route("/Cilia")
+    @app.route("/cilia")
 def home():
-    return render_template("Cilia.html")
+    return render_template("cilia.html")
+
+    @app.route("/sophie")
+def home():
+    return render_template("sophie.html")
+
+    @app.route("/trixie")
+def home():
+    return render_template("trixie.html")
+
+
 
 if __name__ == "__main__":
     app.run()
