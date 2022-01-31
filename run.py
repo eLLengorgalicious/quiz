@@ -39,16 +39,16 @@ def answer(question_id, answer_id):
 def about():
     return render_template("about.html")
 
-    @app.route("/cilia")
-def home():
+@app.route("/cilia")
+def cilia():
     return render_template("cilia.html")
 
-    @app.route("/sophie")
-def home():
+@app.route("/sophie")
+def sophie():
     return render_template("sophie.html")
 
-    @app.route("/trixie")
-def home():
+@app.route("/trixie")
+def trixie():
     return render_template("trixie.html")
 
 
