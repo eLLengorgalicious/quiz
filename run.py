@@ -2,6 +2,7 @@
 from flask import Flask, render_template
 import json
 from random import choice
+import requests
 
 app = Flask(__name__)
 app.config['TEMPLATES_AUTO_RELOAD'] = True
@@ -17,6 +18,14 @@ def check_answer(q_id, a_id):
         questions = json.load(f)
     q = list(filter(lambda x: x["id"] == q_id, questions))[0]
     return q["correct"] == a_id
+
+def scrape():
+    url = "https://www.bbc.com/news"
+    response = requests.get(url)
+    soup = BeautifulSoup(response.content, 'html.parser')
+    headlines = [elem.string for elem in soup.select("h3")]
+    headline = choice(headlines)
+    return headline
 
 
 
@@ -51,6 +60,10 @@ def sophie():
 def trixie():
     return render_template("trixie.html")
 
+@app.route("/webscraping")
+def webscraping():
+    headline =scrape()
+    return render_template("webscraping.html",headline=headline)
 
 
 if __name__ == "__main__":
